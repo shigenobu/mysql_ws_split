@@ -22,7 +22,7 @@ func argToGostrings(count C.uint, args **C.char, lengths *C.ulong) []string {
 	// https://github.com/golang/go/wiki/cgo#turning-c-arrays-into-go-slices
 	length := count
 	argslice := (*[1 << 30]*C.char)(unsafe.Pointer(args))[:length:length]
-	lengthsslice := (*[1]C.ulong)(unsafe.Pointer(lengths))[:length:length]
+	lengthsslice := (*[1 << 2]C.ulong)(unsafe.Pointer(lengths))[:length:length]
 
 	gostrings := make([]string, count)
 
