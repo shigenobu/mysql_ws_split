@@ -3,7 +3,7 @@
 ### about
 
 This is MySQL User Defined Function written by cgo.  
-Split from url to json in mysql string arg.  
+Split from string to json array.  
 
 |arg|explain|
 |---|-------|
