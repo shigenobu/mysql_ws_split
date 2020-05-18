@@ -44,6 +44,9 @@ func ws_split_init(initid *C.UDF_INIT, args *C.UDF_ARGS, message *C.char) C.my_b
 	if typeslice[0] != C.STRING_RESULT {
 		return 1
 	}
+	if typeslice[1] != C.STRING_RESULT {
+		return 1
+	}
 
 	return 0
 }
