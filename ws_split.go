@@ -36,7 +36,7 @@ func argToGostrings(count C.uint, args **C.char, lengths *C.ulong) []string {
 //export ws_split_init
 func ws_split_init(initid *C.UDF_INIT, args *C.UDF_ARGS, message *C.char) C.my_bool {
 	length := int(args.arg_count)
-	if length != 1 {
+	if length != 2 {
 		return 1
 	}
 
