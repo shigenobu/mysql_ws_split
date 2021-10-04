@@ -1,9 +1,9 @@
 package test
 
 import (
-	"../func"
 	"encoding/json"
 	"fmt"
+	"github.com/shigenobu/mysql_ws_split/func"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

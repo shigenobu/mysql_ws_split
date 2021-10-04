@@ -13,8 +13,8 @@ import (
 		#include <limits.h>
 	*/
 	"C"
+	"github.com/shigenobu/mysql_ws_split/func"
 	"unsafe"
-	"./func"
 )
 
 // convert argc, argv into go structure
